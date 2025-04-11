@@ -10,7 +10,6 @@ MindMetrics website provides a user-friendly UI to learn about mental health.
 - Analyse your mental health over a period of time.
 - Get an Indication about your mental health condition with a graphical visualization.
 - Editor's compiled articles to read and educate about mental health problems.
-- Get emails from time to time with suggestions to improve your mental health.
 
 
 #### System Design
