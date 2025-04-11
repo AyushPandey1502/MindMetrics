@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+.messageContainer {
+  height: 100vh;
+  background-color: #97cdfc; /* Slightly different background */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.messageContainer .logoContainer {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.messageContainer header {
+  justify-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 4.8rem; /* Subtle padding change */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Even subtler border */
+}
+
+.messageContainer > header button {
+  font-size: 15.5px; /* Slightly smaller font */
+  padding: 0.55em 1.1em; /* Subtle padding change */
+  border: 1.8px solid rgba(0, 0, 0, 0.45); /* Slightly adjusted border */
+  border-radius: 7px; /* Subtle radius change */
+  background-color: rgba(255, 255, 255, 0.25); /* Even subtler background */
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.messageContainer > header button:hover {
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.18);
+  background-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(0, 0, 0, 0.55);
+}
+
+.messageContainer > footer {
+  width: 75%; /* Subtle width change */
+  padding: 0.7rem 0; /* Subtle padding change */
+}
+
+.messageContainer > footer form {
+  box-shadow: rgba(60, 64, 67, 0.22) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.12) 0px 2px 5px 1px; /* Even subtler shadow */
+  border-radius: 45px; /* Subtle radius change */
+  padding: 0 0.7rem; /* Subtle padding change */
+  background-color: #f8f8f8; /* Slightly different light gray */
+  display: flex;
+  align-items: center;
+}
+
+.messageContainer > footer input {
+  flex: 1;
+  font-size: 15.5px; /* Subtle font change */
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 75%;
+  padding: 0.65em 0.9em; /* Subtle padding change */
+}
+
+.messageContainer > footer button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  line-height: 0;
+  cursor: pointer;
+  transition: opacity 0.22s ease-in-out;
+}
+
+.messageContainer > footer button:disabled {
+  opacity: 0.55; /* Subtle opacity change */
+}
+
+.messageContainer > footer button > span {
+  font-size: 30px; /* Subtle icon change */
+  color: rgba(0, 0, 0, 0.65); /* Subtle color change */
+}
+
+.messageContainer main {
+  width: 75%; /* Subtle width change */
+  overflow: auto;
+  padding: 9px; /* Subtle padding change */
+}
+
+.messageContainer main::-webkit-scrollbar {
+  width: 4.5px; /* Subtle scrollbar change */
+  background-color: transparent;
+  border-radius: 4.5px; /* Subtle radius change */
+}
+
+.messageContainer main::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.45); /* Subtle thumb change */
+  border-radius: 4.5px; /* Subtle radius change */
+}
+
+.chat {
+  background-color: rgba(255, 255, 255, 0.75); /* Subtle transparency change */
+  margin-top: 0.9rem; /* Subtle margin change */
+  font-size: 15.5px; /* Subtle font change */
+  width: fit-content;
+  max-width: 90%;
+  margin-right: auto;
+  padding: 0.45em 0.9em; /* Subtle padding change */
+  line-height: 27px; /* Subtle line height change */
+  border-radius: 7px 7px 7px 0; /* Subtle radius change */
+  box-shadow: rgba(60, 64, 67, 0.22) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.12) 0px 2px 5px 1px; /* Even subtler shadow */
+}
+.own {
+  background-color: rgba(221, 255, 235, 0.75); /* Subtle transparency change */
+  margin-left: auto;
+  margin-right: 0px;
+  max-width: 90%;
+  border-radius: 7px 7px 0 7px; /* Subtle radius change */
+}
+
+.loadCursor {
+  width: 19px; /* Subtle cursor change */
+  height: 19px; /* Subtle cursor change */
+  background-color: rgba(0, 0, 0, 0.85); /* Subtle color change */
+  border-radius: 50px;
+  display: inline-block;
+  -webkit-animation: pulse 1.9s infinite ease-in-out; /* Subtle animation change */
+  -o-animation: pulse 1.9s infinite ease-in-out;
+  -ms-animation: pulse 1.9s infinite ease-in-out;
+  -moz-animation: pulse 1.9s infinite ease-in-out;
+  animation: pulse 1.9s infinite ease-in-out;
+}
+.headerText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 450; /* Subtle weight change */
+  font-size: 1.05rem; /* Subtle size change */
+}
+
+@media only screen and (max-width: 650px) {
+  .messageContainer header {
+    padding: 0.9rem 2.5rem; /* Subtle padding change */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .messageContainer header {
+    padding: 0.9rem 0.9rem; /* Subtle padding change */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .messageContainer > footer {
+    width: 100%;
+    padding-left: 12px; /* Subtle padding change */
+    padding-right: 12px; /* Subtle padding change */
+  }
+
+  .messageContainer main {
+    width: 100%;
+    padding-left: 12px; /* Subtle padding change */
+    padding-right: 12px; /* Subtle padding change */
+  }
+
+  .headerText {
+    display: none;
+  }
+}
+
+/*--------------------------*/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.92); /* Subtle scale change */
+    opacity: 0.65; /* Subtle opacity change */
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.92); /* Subtle scale change */
+    opacity: 0.65; /* Subtle opacity change */
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.92); /* Subtle scale change */
+    opacity: 0.65; /* Subtle opacity change */
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.92); /* Subtle scale change */
+    opacity: 0.65; /* Subtle opacity change */
+  }
+}
+
+/*--------------------------*/
+
+/*---- loader ----*/
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 70px; /* Subtle loader change */
+  height: 70px; /* Subtle loader change */
+}
+.lds-ripple div {
+  position: absolute;
+  border: 3.5px solid #fff; /* Subtle border change */
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 33px; /* Subtle position change */
+    left: 33px; /* Subtle position change */
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 33px; /* Subtle position change */
+    left: 33px; /* Subtle position change */
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 33px; /* Subtle position change */
+    left: 33px; /* Subtle position change */
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 66px; /* Subtle size change */
+    height: 66px; /* Subtle size change */
+    opacity: 0;
+  }
+}
+/*----------------------------*/
+
+.loadingChatInit {
+  text-align: center;
+  font-size: 0.85rem; /* Subtle font change */
+  color: rgba(0, 0, 0, 0.55); /* Subtle color change */
+}
+.emptyChat {
+  text-align: center;
+  font-size: 0.85rem; /* Subtle font change */
+  color: rgba(0, 0, 0, 0.55); /* Subtle color change */
+}
+.copyButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Subtle gap change */
+  font-size: 0.75rem; /* Subtle font change */
+}
+
+.copyButton:focus {
+  outline: none;
+}
+
+.copyButton:hover {
+  color: #0056b3;
+}
+
+.own .copyButton {
+  display: none; /* Hide the copy button for user messages */
+}
