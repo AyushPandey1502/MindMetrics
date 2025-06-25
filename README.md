@@ -4,6 +4,8 @@
 MindMetrics is a mental health **AI** powered chat assistant that guides and helps you to improve your mental health.
 MindMetrics website provides a user-friendly UI to learn about mental health.
 
+[View Documentation](https://docs.google.com/document/d/1nK6WmnWWg44HUP5zBB0NLJp_Je5TeJAT/edit?usp=drive_link&ouid=115040798283503906414&rtpof=true&sd=true)
+
 
 
 ## Features
